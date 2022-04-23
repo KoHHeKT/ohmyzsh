@@ -2,6 +2,6 @@ clmax () {
     emacsclient -c --socket-name=default $@ &
 }
 
-testfun (){
-    echo "$@"
+gitex () {
+    smartgit . $@ &
 }
