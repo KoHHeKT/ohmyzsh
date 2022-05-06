@@ -3,5 +3,6 @@ clmax () {
 }
 
 gitex () {
+    setopt local_options no_notify no_monitor
     smartgit . $@ &
 }
