@@ -2,7 +2,7 @@ clmax () {
     emacsclient -c --socket-name=default $@ &
 }
 
-gitex () {
+gex () {#run smartGit as git extensions
     setopt local_options no_notify no_monitor
-    smartgit . $@ &
+    nohup smartgit . $@ &> /dev/null &disown
 }
